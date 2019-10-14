@@ -6,7 +6,6 @@ import {
   globalHandleError
 } from './utils'
 
-import NuxtError from '../layouts/error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
 import '../node_modules/vuetify/dist/vuetify.css'
@@ -20,14 +19,6 @@ export default {
 
   render (h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
-
-    if (this.nuxt.err && NuxtError.layout) {
-      this.setLayout(
-        typeof NuxtError.layout === 'function'
-          ? NuxtError.layout(this.context)
-          : NuxtError.layout
-      )
-    }
 
     const layoutEl = h(this.layout || 'nuxt')
     const templateEl = h('div', {
