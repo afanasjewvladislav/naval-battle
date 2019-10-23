@@ -1,5 +1,7 @@
 <template>
-  <nuxt />
+  <div>
+    <nuxt />
+  </div>
 </template>
 
 <script>
@@ -11,3 +13,7 @@ export default {
   }
 }
 </script>
+
+<style scss>
+
+</style>
