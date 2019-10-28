@@ -17,14 +17,6 @@
       </div>
       <router-view></router-view>
     </v-app>
-      <v-footer
-        absolute
-        dark
-      >
-        <div class="text-footer">
-          <div>{{ new Date().getFullYear() }}</div>
-        </div>
-      </v-footer>
   </div>
 </template> 
 
@@ -71,9 +63,4 @@ export default {
     padding-top: 200px; 
   }
 
-  .text-footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
 </style>
