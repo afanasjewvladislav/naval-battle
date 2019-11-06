@@ -1,13 +1,19 @@
 <template>
   <div class="message">
-    <h1>Раздел в разработке!</h1>
+    <!-- <h1>Раздел в разработке!</h1> -->
+    <playing-field />
+    <playing-field />
   </div>
 </template>
 
 <script>
+import PlayingField from '../components/PlayingField.vue';
+
 export default {
-  
-}
+  components: {
+    PlayingField,
+  },
+};
 </script>
 
 <style lang="scss">
