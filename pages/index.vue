@@ -2,15 +2,15 @@
   <div id="app">
     <v-app>
       <div class="navigation-panel">
-        <main-navigation-button 
+        <main-navigation-button
           @mainButton="goToStatistics"
           postTitle="Статистика"
         />
-        <main-navigation-button 
+        <main-navigation-button
           @mainButton="startSingle"
           postTitle="Одиночная игра"
         />
-        <main-navigation-button 
+        <main-navigation-button
           @mainButton="startMultiplayer"
           postTitle="Многопользовательская игра"
         />
@@ -18,7 +18,7 @@
       <router-view></router-view>
     </v-app>
   </div>
-</template> 
+</template>
 
 <script>
 import mainNavigationButton from '../components/common/MainButtonNavigation.vue';
@@ -37,8 +37,8 @@ export default {
     startMultiplayer() {
       this.$router.push({ path: 'Multiplayer' });
     },
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss">
@@ -60,7 +60,7 @@ export default {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    padding-top: 200px; 
+    padding-top: 200px;
   }
 
 </style>
